@@ -2,7 +2,7 @@
 > Minecraft plugin that allows server admins to add a extra line above player head
 ---
 ## Features
-- PlaceholderAPI support (coming)
+- PlaceholderAPI support
 - Display information above player head
 ---
 ## Installation

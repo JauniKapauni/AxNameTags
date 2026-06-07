@@ -1,6 +1,8 @@
 package de.jaunikapauni.axnametags;
 
 import de.jaunikapauni.axnametags.listener.PlayerJoinListener;
+import me.clip.placeholderapi.PlaceholderAPI;
+import net.kyori.adventure.text.minimessage.tag.resolver.Placeholder;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -29,7 +31,7 @@ public final class AxNameTags extends JavaPlugin {
 
         Objective objective = scoreboard.registerNewObjective("below_name", "dummy");
         objective.setDisplaySlot(DisplaySlot.BELOW_NAME);
-        objective.setDisplayName(getConfig().getString("value"));
+        objective.setDisplayName(PlaceholderAPI.setBracketPlaceholders(p, getConfig().getString("value")));
         p.setScoreboard(scoreboard);
     }
 }
