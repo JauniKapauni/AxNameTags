@@ -29,9 +29,9 @@ public final class AxNameTags extends JavaPlugin {
         ScoreboardManager manager = Bukkit.getScoreboardManager();
         Scoreboard scoreboard = manager.getNewScoreboard();
 
-        Objective objective = scoreboard.registerNewObjective("below_name", "dummy");
+        Objective objective = scoreboard.registerNewObjective("below_name", "dummy", PlaceholderAPI.setPlaceholders(p, getConfig().getString("value")));
         objective.setDisplaySlot(DisplaySlot.BELOW_NAME);
-        objective.setDisplayName(PlaceholderAPI.setPlaceholders(p, getConfig().getString("value")));
+        objective.getScore(p.getName()).setScore(1);
         p.setScoreboard(scoreboard);
     }
 }
