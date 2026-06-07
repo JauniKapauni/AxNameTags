@@ -31,7 +31,7 @@ public final class AxNameTags extends JavaPlugin {
 
         Objective objective = scoreboard.registerNewObjective("below_name", "dummy");
         objective.setDisplaySlot(DisplaySlot.BELOW_NAME);
-        objective.setDisplayName(PlaceholderAPI.setBracketPlaceholders(p, getConfig().getString("value")));
+        objective.setDisplayName(PlaceholderAPI.setPlaceholders(p, getConfig().getString("value")));
         p.setScoreboard(scoreboard);
     }
 }
