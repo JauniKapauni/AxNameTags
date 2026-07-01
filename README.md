@@ -21,6 +21,7 @@ value: hello_world
 ---
 ## Support
 Discord: [AxForge](https://discord.gg/rYSxV4daS8)
+
 ---
 ## License
 AxNameTags is licensed under the permissive MIT License. Please see [LICENSE](https://github.com/JauniKapauni/AxNameTags/blob/master/LICENSE) for more info.
